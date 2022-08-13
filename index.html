@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css">
+    <title>Animated Social Media Menu</title>
+</head>
+<body>
+    <div class="navigation">
+        <div class="menuToggle"></div>
+        <div class="menu">
+            <ul>
+                <li style="--i:0.1s;"><a href="#"><i class="fi fi-brands-instagram"></i></a></li>
+                <li style="--i:0.2s;"><a href="#"><i class="fi fi-brands-whatsapp"></i></a></li>
+                <li style="--i:0.3s;"><a href="#"><i class="fi fi-brands-twitter"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        let menuToggle = document.querySelector('.menuToggle');
+        menuToggle.onclick=function(){
+            menuToggle.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
